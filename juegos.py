@@ -16,10 +16,10 @@ while (otra_vez == 's' or otra_vez == 'si'):
   f = open ('DatosDeLaPartida.txt','w')
   print('Ingrese su nombre: ')
   nom = input()
-  datos = {
-   "nombre": nom,
-   "juego": evento [0]
-          }
+  datos = {}
+  juegos=[]
+  juegos.append(evento[0])
+  datos[nom] = juegos
   json.dump(datos, f)
   f.close()
   if (evento [0]== 'TaTeTi'):
